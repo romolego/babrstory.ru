@@ -210,6 +210,59 @@
     font-size: 1.1em;
   }
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 1.05em;
+    line-height: 1.6;
+    padding: 0;
+  }
+
+  header {
+    padding: 3em 1em 2em;
+  }
+
+  header h1 {
+    font-size: 1.9em;
+  }
+
+  header p,
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .about-book,
+  .author-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-book img,
+  .author-photo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+  }
+
+  .text,
+  .author-text {
+    padding: 0 1em;
+  }
+
+  a[onclick*="toggleIntro"] {
+    width: 90%;
+    font-size: 1.2em;
+  }
+
+  section {
+    padding: 2em 1em;
+  }
+
+  footer {
+    font-size: 0.95em;
+  }
+}
 </style>
 </head>
 <body>
