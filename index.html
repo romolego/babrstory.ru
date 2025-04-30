@@ -296,11 +296,31 @@
   }
 }
 
+/* Десктопная структура */
+.about-book,
+.author-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+/* Картинки по умолчанию */
+.about-book img,
+.author-photo {
+  max-width: 300px;
+  height: auto;
+}
+
+/* Мобильная адаптация */
 @media screen and (max-width: 768px) {
   .about-book,
   .author-content {
-    display: flex;
     flex-direction: column !important;
+    flex-wrap: wrap;
     align-items: center;
     text-align: center;
     gap: 1.2em;
@@ -308,9 +328,13 @@
 
   .about-book img,
   .author-photo {
-    max-width: 100%;
-    height: auto;
+    max-width: 90%;
     margin-bottom: 1em;
+  }
+
+  .text,
+  .author-text {
+    padding: 0 1em;
   }
 }
 </style>
@@ -327,7 +351,7 @@
 </section>
 <section style="margin-bottom: 1em; padding: 2em 1.5em;">
 <div class="about-book">
-<img alt="Обложка книги" src="book-cover.jpg" style="align-self: center;"/>
+<img alt="Обложка книги" src="book-cover.jpg"/>
 <div class="text">
 <h2>О книге</h2>
 <p>«История Бабра» — притча о молодом тигре, которого река по воле судьбы уносит к берегам Байкала. Получив от таинственного шамана силу воды, он становится мистическим Бабром и отправляется в путешествие за древним артефактом, способным раскрыть самые сокровенные истины.</p>
